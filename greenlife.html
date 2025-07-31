@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="logo.png" type="image/png" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenLife Cosméticos Naturais.</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f7;
+      color: #2f3e2f;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #d7e9d7;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      color: #317a31;
+      font-weight: 700;
+      font-size: 1.8rem;
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .menu li {
+      /* nada específico aqui */
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #317a31;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #317a31;
+      color: white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgb(50 50 50 / 0.1);
+    }
+
+    section h2 {
+      color: #2a4d2a;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #317a31;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    section img {
+      max-width: 150px;
+      margin-right: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      vertical-align: middle;
+    }
+
+    blockquote {
+      font-style: italic;
+      background-color: #e3f2e3;
+      border-left: 5px solid #317a31;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      color: #3d563d;
+    }
+
+    form label {
+      font-weight: 600;
+      color: #317a31;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px 12px;
+      margin-top: 6px;
+      margin-bottom: 15px;
+      border: 1.5px solid #9ccc9c;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #317a31;
+      outline: none;
+      background-color: #f0f9f0;
+    }
+
+    button {
+      background-color: #317a31;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4d9c4d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="logo da Empresa" />
+    <h1>GreenLife Cosméticos Naturais.</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#produtos">Nossos produtos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+      <h2>Início</h2>
+      <p>Bem-vindo à GreenLife Cosméticos Naturais! Oferecemos produtos de alta qualidade, feitos com ingredientes naturais.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre nós</h2>
+      <p>Somos uma empresa comprometida com a beleza natural e o meio ambiente. Produzimos cosméticos livres de químicos agressivos.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco:</p>
+      <ul>
+        <li>Email: contato@greenlife.com</li>
+        <li>Telefone: (11) 1234-5678</li>
+        <li>Instagram: @greenlife_cosmeticos</li>
+      </ul>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <p>Conheça nossa linha de shampoos, sabonetes, óleos e cremes totalmente naturais.</p>
+      <img src="sabonete.png" alt="Sabonete green - aroma limão verde" /><br />
+      <img src="shampoo.png" alt="Shampoo green - aroma limão verde" /><br />
+      <img src="perfume.png" alt="Perfume - aroma limão verde" />
+    </section>
+
+    <section id="depoimentos">
+      <h2>Depoimentos de Clientes</h2>
+
+      <blockquote>
+        "Os produtos da GreenLife transformaram minha pele!" — Maria S.
+      </blockquote>
+
+      <blockquote>
+        "Qualidade e cuidado com o meio ambiente, recomendo!" — João P.
+      </blockquote>
+
+      <h3>Deixe seu depoimento</h3>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="mensagem">Depoimento:</label><br />
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
