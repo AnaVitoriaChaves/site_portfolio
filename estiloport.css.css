@@ -1,0 +1,163 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #f3e5f5, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Animação suave na entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cabeçalho com fundo lilás suave */
+header {
+  background-color: #f3e5f5; /* Lilás claro */
+  color: #4a148c; /* Roxo escuro para o texto */
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo destacada */
+header img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 5px rgba(106, 27, 154, 0.5));
+}
+
+/* Título */
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+
+/* Navegação */
+nav {
+  background: #fff;
+  border-bottom: 2px solid #e1bee7;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6a1b9a;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #e1bee7;
+  color: #4a148c;
+}
+
+/* Seções */
+section {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  transition: background-color 0.3s ease;
+}
+
+section:hover {
+  background-color: #fce4ec;
+  border-radius: 8px;
+}
+
+/* Títulos */
+section h2, section h3 {
+  color: #6a1b9a;
+  margin-bottom: 1rem;
+  border-left: 5px solid #ce93d8;
+  padding-left: 10px;
+}
+
+/* Texto */
+section p, section li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Projetos */
+ol {
+  padding-left: 1.5rem;
+}
+
+ol li a {
+  color: #4a148c;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+ol li a:hover {
+  border-color: #ba68c8;
+  color: #6a1b9a;
+}
+
+/* Contato */
+#Contato ul, #Contato u {
+  list-style: none;
+  padding: 0;
+}
+
+#Contato li a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#Contato li a:hover {
+  color: #4a148c;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f3e5f5;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 2px solid #ce93d8;
+  margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+}
